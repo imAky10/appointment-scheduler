@@ -17,7 +17,7 @@ function App() {
     if (accounts.length > 0) {
       setAccount(accounts[0]);
     } else {
-      alert("No authorized account found");
+      console.log("No authorized account found");
     }
   };
 
@@ -34,7 +34,7 @@ function App() {
       if (accounts.length > 0) {
         setAccount(accounts[0]);
       } else {
-        alert("No account found");
+        console.log("No account found");
       }
     } catch (error) {
       console.log(error);
@@ -48,7 +48,7 @@ function App() {
         <p id="slogan">Web3 Appointment Scheduler</p>
       </header>
       {!account && <button onClick={connect}>Connect Wallet</button>}
-      {account && <Calendar />}
+      {account && <Calendar account={account} />}
     </div>
   );
 }
