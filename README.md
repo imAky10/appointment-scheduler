@@ -1,15 +1,5 @@
-# Basic Sample Hardhat Project
+A Web3 based Calendly React web app using ETH to book appointments.
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Requires the Metamask Wallet Extension to be installed in your browser to interact with this Web3 ReactJs app built on the Ethereum Blockchain.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+Users interact with the Frontend React Calend3 Web3app, viewing the available schedule to book appointments by paying a rate of ETH/min as set by the owner. Once an appointment has been booked, the user receives a confirmation of the appointment booking on the blockchain viewed by etherscan txn hash. The owner of the Calend3 receives ETH and is notified by SMS of the appointment on the blockchain.
